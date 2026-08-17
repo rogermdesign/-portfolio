@@ -1,29 +1,30 @@
-// Importa as funções necessárias do SDK Web do Firebase v10+
+// 1. Imports sempre no topo do arquivo
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-// Suas credenciais copiadas do Firebase Console
+// 2. Credenciais reais do seu projeto do Firebase
+// Certifique-se de substituir apiKey e appId pelas chaves reais geradas no Firebase Console
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_PROJETO.firebaseapp.com",
-  projectId: "SEU_PROJETO_ID",
-  storageBucket: "SEU_PROJETO.appspot.com",
-  messagingSenderId: "SEU_SENDER_ID",
-  appId: "SEU_APP_ID"
+  apiKey: "SUA_API_KEY_REAL_AQUI", // Insira a sua apiKey real do console
+  authDomain: "rogerportfolio-38540.firebaseapp.com",
+  projectId: "rogerportfolio-38540",
+  storageBucket: "rogerportfolio-38540.firebasestorage.app",
+  messagingSenderId: "1234567890", // Insira o seu messagingSenderId real
+  appId: "SUA_APP_ID_REAL_AQUI" // Insira o seu appId real
 };
 
-// Inicializa o Firebase e o Firestore
+// 3. Inicializa o Firebase e o Firestore
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Seleciona os elementos do DOM
+// 4. Seleciona os elementos do DOM
 const form = document.getElementById("cadastroForm");
 const nomeInput = document.getElementById("nome");
 const emailInput = document.getElementById("email");
 const btnSalvar = document.getElementById("btnSalvar");
 const mensagemDiv = document.getElementById("mensagem");
 
-// Evento de envio do formulário
+// 5. Evento de envio do formulário
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
