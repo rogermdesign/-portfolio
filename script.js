@@ -5,12 +5,12 @@ import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.g
 // 2. Credenciais reais do seu projeto do Firebase
 // Certifique-se de substituir apiKey e appId pelas chaves reais geradas no Firebase Console
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY_REAL_AQUI", // Insira a sua apiKey real do console
+  apiKey: "BB2MZe_fDwGwd8iv-ZIWKzt4Outsr2fXDnLDV9W8nSFxGU_MIXSskBRpi7a6qc46ZAcyZK_Nm0YBFjEaQrKFDI4", // Insira a sua apiKey real do console
   authDomain: "rogerportfolio-38540.firebaseapp.com",
   projectId: "rogerportfolio-38540",
   storageBucket: "rogerportfolio-38540.firebasestorage.app",
   messagingSenderId: "1234567890", // Insira o seu messagingSenderId real
-  appId: "SUA_APP_ID_REAL_AQUI" // Insira o seu appId real
+  appId: "930044143281" // Insira o seu appId real
 };
 
 // 3. Inicializa o Firebase e o Firestore
